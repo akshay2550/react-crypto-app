@@ -21,6 +21,8 @@ const News = ({ simplified }) => {
   });
   const { data } = useGetCryptosQuery(100);
 
+  console.log(cryptoNews);
+
   if (!cryptoNews?.value) return <Loader />;
 
   return (
